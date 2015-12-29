@@ -1,4 +1,4 @@
-# Author: Harish Mohan <harishprofile001@gmail.com>
+# Author: Gowtham <gowthamdk@outlook.com>
 # Name: GMaps Scrapper
 # Version: 3.2
 # Description: Scraps data(name, category, address, geocode) from google maps
