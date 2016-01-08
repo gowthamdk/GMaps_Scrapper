@@ -1,8 +1,8 @@
 # Author: Gowtham <gowthamdk@outlook.com>
 # Name: GMaps Scrapper
-# Version: 3.2
+# Version: 3.3.0
 # Description: Scraps data(name, category, address, geocode) from google maps
-# Git Repository: https://github.com/harish0507/GMapsScrapper
+# Git Repository: https://github.com/gowthamdk/GMaps_Scrapper
 
 from splinter import Browser
 from easygui import *
@@ -37,7 +37,7 @@ def recursive_scrapper():
                 # get address
                 address = chrome.find_by_xpath("//div[contains(@class, 'widget-pane-section-info')]")[0].text
                 # get category
-                category = chrome.find_by_xpath("//a[contains(@jsaction, 'pane.rating.category')]").text
+                category = chrome.find_by_xpath("//button[contains(@jsaction, 'pane.rating.category')]").text
                 # get URL for extracting geocode
                 geocode_url = chrome.url.split("@")
                 geocode_arr = geocode_url[1].split(",")
